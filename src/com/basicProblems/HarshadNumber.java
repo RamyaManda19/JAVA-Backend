@@ -1,4 +1,5 @@
 package com.basicProblems;
+import java.util.*;
 
 public class HarshadNumber {
 	public int getSum(int num) {
@@ -17,7 +18,16 @@ public class HarshadNumber {
 	}
 
 	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter a Number:");
+		int num=s.nextInt();
 		HarshadNumber obj=new HarshadNumber();
-		System.out.println(obj.isHarshad(25));
+		if(obj.isHarshad(num)){
+			System.out.print(num+" "+"is a Harshad Number");
+		}else {
+			System.out.print(num+" "+"is not a Harshad Number");
+		}
+		s.close();
 	}
 }
+
